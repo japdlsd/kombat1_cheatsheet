@@ -1,0 +1,13 @@
+%\section{Reccurent problems}
+%\subsection{Repertoir method}
+\subsection{Method of summation factors}
+\begin{align*}
+\text{Given} \\
+& T_0 = \langle \text{whatever} \rangle \\ 
+& a_n T_n = b_n T_{n-1} + c_n \leftarrow n \geq 1\\
+\text{Let} \\  
+& s_0 := \langle \text{whatever} \neq 0 \rangle \\
+& s_n := \dfrac{a_{n-1} a_{n-2} \cdot \ldots \cdot a_{1}}{b_{n} b_{n-1} \cdot \ldots \cdot b_{2}} \cdot s_0 \\
+\text{Then} \\
+&T_n = \dfrac{1}{a_n s_n} \left[ s_1 b_1 T_0 + \sum_{k=1}^{n} s_k c_k \right] 
+\end{align*}
